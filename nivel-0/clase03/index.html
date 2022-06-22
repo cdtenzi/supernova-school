@@ -3,7 +3,6 @@
     <head>
         <title>CodeSupernova: Nivel 0 - Clase 3</title>
     </head>
-
     <body>
         <style>
             body{
@@ -25,11 +24,14 @@
             <li>El tag <b>"script"</b> que nos permite incrustar javascript (nuestro lenguaje de programación) en una página web</li>
             <li>Nociones básicas de <b>"Estilos"</b> para que nuestras páginas se vean más bonitas</li>
         </ol>
-        <button onclick="alert('Hola mundo!');" value="1">click me</button>
-        <button onclick="saludar();" value="2">click me 2</button>
+        <p>Escribe tu nombre en la casilla de texto:</p>
+        <input id="inputNombre" type="text" /><br/>
+        <button onclick="alert('Hola mundo!');" value="1">Saludo al mundo</button>
+        <button id="button1" onclick="saludar();" value="2">Saludo a ti</button>
         <script>
             function saludar(){
-                alert("Hola mundo!");
+                var nombre = document.getElementById('inputNombre').value;
+                alert("Hola "+ nombre + "!");
             }
         </script>
     </body>
