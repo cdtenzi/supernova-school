@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CodeSupernova: Nivel 0 - Clase 3</title>
+    </head>
+
+    <body>
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            h2{
+                font-weight: bold;
+                font-size: 14pt;
+                color: rgb(54, 87, 119);
+            }
+        </style>
+        <h1>Clase 3</h1>
+        <h2>Hola Mundo!</h2>
+        <p>Con esta página aprenderemos 3 conceptos básicos: </p>
+        <ol style="font-weight:lighter;">
+            <li>Eventos: Todo aquello que el usuario "hace" y puede ser "escuchado" por el navegador</li>
+            <li>El tag <b>"script"</b> que nos permite incrustar javascript (nuestro lenguaje de programación) en una página web</li>
+            <li>Nociones básicas de <b>"Estilos"</b> para que nuestras páginas se vean más bonitas</li>
+        </ol>
+        <button onclick="alert('Hola mundo!');" value="1">click me</button>
+        <button onclick="saludar();" value="2">click me 2</button>
+        <script>
+            function saludar(){
+                alert("Hola mundo!");
+            }
+        </script>
+    </body>
+</html>
