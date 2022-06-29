@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CodeSupernova: Nivel 0 - Clase 4</title>
-        <link rel="stylesheet" href="estilos.css" />
-        <script type="text/javascript" src="scripts.js"></script>
+        <title>CodeSupernova: Nivel 0 - Clase 3</title>
     </head>
     <body>
-        <h1>Clase 4</h1>
-        <h2>Ordenando el código fuente</h2>
-        <p>Con esta página aprenderemos a poner orden en nuestro proyecto:</p>
-        <ol style="font-weight:lighter;">
-            <li>Copiamos la página anterior y cambiamos solo el texto HTML. Luego 
-                hacemos la separación en archivos: cada cosa en su lugar: html, css, javascript</li>
-            <li>Nociones básicas de <b>"arquitectura"</b> de software: 
-                Por qué hacemos estas divisiones según el tipo de código?</li>
-        </ol>
-        <p>Escribe tu nombre en la casilla de texto:</p>
-        <p><input id="inputNombre" type="text" /></p>
-        <button onclick="alert('Hola mundo!');" value="1">Saludo al mundo</button>
-        <button id="button1" onclick="saludar();" value="2">Saludo a ti</button>
+        <script>
+
+            //definicion de la variable parrafo
+            const parrafo = document.createElement('p');
+            //le agregamos algo de texto al párrafo que hemos creado:
+            parrafo.innerText = "esto es un párrafo y lo acabamos de crear con Javascript";
+            //agregamos el párrafo al cuerpo de la página:
+            document.body.appendChild(parrafo);
+
+        </script>
     </body>
 </html>
