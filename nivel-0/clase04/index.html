@@ -4,15 +4,29 @@
         <title>CodeSupernova: Nivel 0 - Clase 3</title>
     </head>
     <body>
+        <h1>Clase 4</h1>
+        <h2>Introducción a la programación</h2>
+        <p>Por ahora dejamos el HTML de lado para aprender los fundamentos básicos de programación: </p>
+        <ol style="font-weight:lighter;">
+            <li>La consola: donde veremos los primeros resultados de nuestros programas</li>
+            <li>Variables: qué son? para que las usamos?</li>
+            <li>tipos de variables y operaciones aritméticas básicas</li>
+        </ol>   
         <script>
+            console.log("Hola Mundo!")
 
-            //definicion de la variable parrafo
-            const parrafo = document.createElement('p');
-            //le agregamos algo de texto al párrafo que hemos creado:
-            parrafo.innerText = "esto es un párrafo y lo acabamos de crear con Javascript";
-            //agregamos el párrafo al cuerpo de la página:
-            document.body.appendChild(parrafo);
+            const miPrimeraVariable = "Hola de nuevo! yo soy el contenido de la variable *miPrimeraVariable*";
 
+            console.log(miPrimeraVariable);
+
+            const unNumero = 3;
+            const otroNumero = 5;
+            const suma = unNumero + otroNumero;
+            console.log(suma);
+
+            console.log(unNumero * otroNumero);
+
+            
         </script>
     </body>
 </html>
