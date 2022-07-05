@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CodeSupernova: Nivel 0 - Clase 3</title>
+        <title>CodeSupernova: Nivel 0 - Clase 5</title>
     </head>
     <body>
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            h2{
+                font-weight: bold;
+                font-size: 14pt;
+                color: rgb(54, 87, 119);
+            }
+        </style>
         <h1>Clase 5</h1>
-        <h2>Ejemplo de manipulación del D.O.M. usando Javascript</h2>
+        <h2>Hola Mundo!</h2>
+        <p>Con esta página aprenderemos 3 conceptos básicos: </p>
+        <ol style="font-weight:lighter;">
+            <li>Eventos: Todo aquello que el usuario "hace" y puede ser "escuchado" por el navegador</li>
+            <li>El tag <b>"script"</b> que nos permite incrustar javascript (nuestro lenguaje de programación) en una página web</li>
+            <li>Nociones básicas de <b>"Estilos"</b> para que nuestras páginas se vean más bonitas</li>
+        </ol>
+        <p>Escribe tu nombre en la casilla de texto:</p>
+        <input id="inputNombre" type="text" /><br/>
+        <button onclick="alert('Hola mundo!');" value="1">Saludo al mundo</button>
+        <button id="button1" onclick="saludar();" value="2">Saludo a ti</button>
         <script>
-
-            //definicion de la variable parrafo
-            const parrafo = document.createElement('p');
-            //le agregamos algo de texto al párrafo que hemos creado:
-            parrafo.innerText = "esto es un párrafo y lo acabamos de crear con Javascript";
-            //agregamos el párrafo al cuerpo de la página:
-            document.body.appendChild(parrafo);
-
+            function saludar(){
+                var nombre = document.getElementById('inputNombre').value;
+                alert("Hola "+ nombre + "!");
+            }
         </script>
     </body>
 </html>

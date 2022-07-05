@@ -15,24 +15,39 @@
                 font-size: 14pt;
                 color: rgb(54, 87, 119);
             }
+            .panel1{
+                background-color: yellow;
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                padding: 10px;
+            }
+            .panel2{
+                background-color: green;
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                padding: 10px;
+            }
         </style>
         <h1>Clase 3</h1>
         <h2>Hola Mundo!</h2>
         <p>Con esta página aprenderemos 3 conceptos básicos: </p>
         <ol style="font-weight:lighter;">
-            <li>Eventos: Todo aquello que el usuario "hace" y puede ser "escuchado" por el navegador</li>
-            <li>El tag <b>"script"</b> que nos permite incrustar javascript (nuestro lenguaje de programación) en una página web</li>
-            <li>Nociones básicas de <b>"Estilos"</b> para que nuestras páginas se vean más bonitas</li>
+            <li>Estilos: conocido como CSS (Cascade Style Sheets)</li>
+            <li>Estilos embebidos o "inline", lo cual no es recomendado</li>
+            <li>Primer vistazo al "DOM" (Document Object Model)</li>
         </ol>
-        <p>Escribe tu nombre en la casilla de texto:</p>
-        <input id="inputNombre" type="text" /><br/>
-        <button onclick="alert('Hola mundo!');" value="1">Saludo al mundo</button>
-        <button id="button1" onclick="saludar();" value="2">Saludo a ti</button>
-        <script>
-            function saludar(){
-                var nombre = document.getElementById('inputNombre').value;
-                alert("Hola "+ nombre + "!");
-            }
-        </script>
+        <div class="panel1">
+            <h2>Esto es un panel</h2>
+            Con un poco de texto
+            <div class="panel2">
+                <h2>Que tiene dentro otro panel</h2>
+                Con algo de texto dentro
+            </div>
+
+        </div>
     </body>
 </html>
