@@ -2,22 +2,37 @@
 <html>
     <head>
         <title>CodeSupernova: Nivel 0 - Clase 7</title>
-        <link rel="stylesheet" href="estilos.css" />
-        <script type="text/javascript" src="scripts.js"></script>
     </head>
     <body>
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            h2{
+                font-weight: bold;
+                font-size: 14pt;
+                color: rgb(54, 87, 119);
+            }
+        </style>
         <h1>Clase 7</h1>
-        <h2>Ordenando el código fuente</h2>
-        <p>Con esta página aprenderemos a poner orden en nuestro proyecto:</p>
+        <h2>Hola Mundo!</h2>
+        <p>Con esta página aprenderemos 3 conceptos básicos: </p>
         <ol style="font-weight:lighter;">
-            <li>Copiamos la página anterior y cambiamos solo el texto HTML. Luego 
-                hacemos la separación en archivos: cada cosa en su lugar: html, css, javascript</li>
-            <li>Nociones básicas de <b>"arquitectura"</b> de software: 
-                Por qué hacemos estas divisiones según el tipo de código?</li>
+            <li>Eventos: Todo aquello que el usuario "hace" y puede ser "escuchado" por el navegador</li>
+            <li>El tag <b>"script"</b> que nos permite incrustar javascript (nuestro lenguaje de programación) en una página web</li>
+            <li>Nociones básicas de <b>"Estilos"</b> para que nuestras páginas se vean más bonitas</li>
         </ol>
         <p>Escribe tu nombre en la casilla de texto:</p>
-        <p><input id="inputNombre" type="text" /></p>
+        <input id="inputNombre" type="text" /><br/>
         <button onclick="alert('Hola mundo!');" value="1">Saludo al mundo</button>
         <button id="button1" onclick="saludar();" value="2">Saludo a ti</button>
+        <script>
+            function saludar(){
+                var nombre = document.getElementById('inputNombre').value;
+                alert("Hola "+ nombre + "!");
+            }
+        </script>
     </body>
 </html>

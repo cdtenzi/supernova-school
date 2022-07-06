@@ -4,35 +4,42 @@
         <title>CodeSupernova: Nivel 0 - Clase 5</title>
     </head>
     <body>
-        <style>
-            body{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                margin-left: 30px;
-                margin-right: 30px;
-            }
-            h2{
-                font-weight: bold;
-                font-size: 14pt;
-                color: rgb(54, 87, 119);
-            }
-        </style>
         <h1>Clase 5</h1>
-        <h2>Hola Mundo!</h2>
-        <p>Con esta página aprenderemos 3 conceptos básicos: </p>
+        <h2>Introducción a la programación</h2>
+        <p>En esta clase veremos lo que son las funciones: </p>
         <ol style="font-weight:lighter;">
-            <li>Eventos: Todo aquello que el usuario "hace" y puede ser "escuchado" por el navegador</li>
-            <li>El tag <b>"script"</b> que nos permite incrustar javascript (nuestro lenguaje de programación) en una página web</li>
-            <li>Nociones básicas de <b>"Estilos"</b> para que nuestras páginas se vean más bonitas</li>
-        </ol>
-        <p>Escribe tu nombre en la casilla de texto:</p>
-        <input id="inputNombre" type="text" /><br/>
-        <button onclick="alert('Hola mundo!');" value="1">Saludo al mundo</button>
-        <button id="button1" onclick="saludar();" value="2">Saludo a ti</button>
+            <li>Qué son las Funciones y para qué se usan?</li>
+            <li>Funciones que reciben parámetros y otras que no</li>
+            <li>Funciones que devuelven valores y otras que no</li>
+        </ol>   
         <script>
-            function saludar(){
-                var nombre = document.getElementById('inputNombre').value;
-                alert("Hola "+ nombre + "!");
+            //variables no numéricas (también llamadas alfanuméricas)
+            const miPrimeraVariable = "Hola de nuevo! yo soy el contenido de la variable *miPrimeraVariable*";
+            console.log(miPrimeraVariable);
+            
+            //variables numéricas
+            const unNumero = 3;
+            const otroNumero = 5;
+            const suma = unNumero + otroNumero;
+            console.log(suma);
+            
+            function sumar2numeros(n1, n2){
+                return n1+n2;
             }
+            
+            const resultado = sumar2numeros(2, 3);
+            console.log(resultado);
+
+            function cuadrado(numero){
+                return numero * numero;
+            }
+            resultado = cuadrado(3);
+            console.log(resultado);
+
+            function saludar(){
+                alert("Hola!");
+            }
+            
         </script>
     </body>
 </html>

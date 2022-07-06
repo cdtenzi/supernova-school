@@ -2,19 +2,19 @@
 <html>
     <head>
         <title>CodeSupernova: Nivel 0 - Clase 8</title>
-        <link rel="stylesheet" href="estilos.css" />
-        <script type="text/javascript" src="scripts.js"></script>
     </head>
     <body>
         <h1>Clase 8</h1>
-        <h2>Variables: la piedra fundamental de la programación (y de la vida misma)</h2>
-        <p>Qué son las variables? literalmente pequeñas porciones de la memoria de tu ordenador:</p>
-        <ol style="font-weight:lighter;">
-            <li>Para qué se utilizan?</li>
-            <li>Tipos de datos</li>
-        </ol>
-        <p>Escribe tu nombre en la caja de texto:</p>
-        <p><input id="inputNombre" type="text" /></p>
-        <button id="button1" onclick="saludar();">Explicación de lo que sucede</button>
+        <h2>Ejemplo de manipulación del D.O.M. usando Javascript</h2>
+        <script>
+
+            //definicion de la variable parrafo
+            const parrafo = document.createElement('p');
+            //le agregamos algo de texto al párrafo que hemos creado:
+            parrafo.innerText = "esto es un párrafo y lo acabamos de crear con Javascript";
+            //agregamos el párrafo al cuerpo de la página:
+            document.body.appendChild(parrafo);
+
+        </script>
     </body>
 </html>

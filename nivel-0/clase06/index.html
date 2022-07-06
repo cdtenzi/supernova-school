@@ -4,17 +4,30 @@
         <title>CodeSupernova: Nivel 0 - Clase 6</title>
     </head>
     <body>
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            h2{
+                font-weight: bold;
+                font-size: 14pt;
+                color: rgb(54, 87, 119);
+            }
+        </style>
         <h1>Clase 6</h1>
-        <h2>Ejemplo de manipulación del D.O.M. usando Javascript</h2>
+        <h2>Funciones</h2>
+        <p>Con esta página aprenderemos: </p>
+        <ol style="font-weight:lighter;">
+            <li>Organizar el código según el propósito que cumple, para luego interactuar con el usuario</li>
+            <li>HTML Dinámico (DHTML): Código que interactúa con el DOM</li>
+        </ol>
+        <button id="button1" onclick="saludar();" value="2">Saludos</button>
         <script>
-
-            //definicion de la variable parrafo
-            const parrafo = document.createElement('p');
-            //le agregamos algo de texto al párrafo que hemos creado:
-            parrafo.innerText = "esto es un párrafo y lo acabamos de crear con Javascript";
-            //agregamos el párrafo al cuerpo de la página:
-            document.body.appendChild(parrafo);
-
+            function saludar(){
+                alert("Hola! Acabas de hacer clic en el botón 'Saludos'");
+            }
         </script>
     </body>
 </html>
